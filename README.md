@@ -1,37 +1,46 @@
-# AI-in-Cybersecurity
+# AI in Cybersecurity
 
-Hands-on course materials for practical SOC workflows, progressing from environment setup to evidence-driven detection and then AI-assisted triage.
+Hands-on two-day course for SOC analysts and detection engineers. Students build a complete security detection and investigation pipeline on AWS — from a bare EC2 instance through live automated AI-assisted investigations.
+
+**Platform:** AWS (Amazon Linux 2023 EC2, CloudWatch, Security Hub, GuardDuty)  
+**AI Tooling:** CloudWatch AI Operations; AI coding assistants (Amazon Q, GitHub Copilot, or equivalent)  
+**Language:** Python 3.x and Bash
+
+See [outline.md](outline.md) for full module descriptions, learning objectives, and course overview.
+
+---
+
+## Prerequisites
+
+- Basic Python (reading files, writing functions, running scripts from the command line)
+- Familiarity with common security concepts (authentication, SSH, privilege escalation, alerts)
+- An AWS account with permissions to launch EC2 instances and enable Security Hub and GuardDuty
+- No prior AWS experience required — cloud concepts are introduced in Lab 1.1
+
+---
 
 ## Labs
 
-1. `labs/1.0-Instance-setup.md`
-	- Build and access a Linux VM from VS Code over SSH.
-	- Practice Linux terminal basics and file-permission security concepts.
+Labs are completed in order. Each lab builds on artifacts from the previous one. Later labs on each day are supplemental — if time runs short the class finishes any started lab before moving on.
 
-2. `labs/2.0-Event-Collection-and-Risk-Scoring.md`
-	- Simulate controlled suspicious activity.
-	- Capture and pivot Linux auth and sudo evidence.
-	- Rank findings with an explainable Python risk-scoring script.
+### Day 1 — Cloud Environment Setup, Log Evidence, AI-Assisted Scripting, and Security Posture
 
-3. `labs/3.0-Wazuh-Endpoint-and-SIEM-Integration.md` (Optional)
-	- Add Wazuh endpoint telemetry on Amazon Linux 2023.
-	- Export endpoint alerts and forward into SIEM ingestion (Splunk HEC example).
-	- Rank endpoint alerts with Python for analyst triage.
+| # | Lab | Topics |
+|---|---|---|
+| 1.1 | [Instance Setup](labs/1.1-Instance-Setup.md) | EC2 launch, SSH, VS Code Remote SSH, Linux file permissions, SetUID binaries, security group hardening |
+| 1.2 | [Suspicious Activity Simulation and Risk Scoring](labs/1.2-Suspicious-Activity-Simulation-and-Risk-Scoring.md) | Attack simulation (brute force, privilege escalation, account enumeration), auditd, journald, Python risk scorer |
+| 1.3 | [AI-Assisted Security Scripting and IAM Review](labs/1.3-AI-Assisted-Security-Scripting-and-IAM-Review.md.md) | Prompt engineering, AI code review checklist, IAM least-privilege policy generation, Lambda execution roles |
+| 1.4 | [AWS Security Posture Baseline](labs/1.4-AWS-Security-Posture-Baseline.md) | AWS CLI posture checks, Security Hub findings, GuardDuty, CloudTrail, controlled remediation |
+| 1.5 | [Endpoint Telemetry and Alert Pipeline](labs/2.1-Endpoint-security-Integration.md) | CloudWatch agent, auditd → `/soc-lab/secure` log group, GuardDuty Runtime Monitoring, Python normalizer → `soc-alerts-normalized.jsonl` |
 
-4. `labs/4.0-Bedrock-Agent-SOC-Triage.md`
-	- Create a Bedrock Agent specialized for SOC triage.
-	- Build and manually test Lambda-based AI triage.
-	- Add IAM guardrails and structured response validation.
+### Day 2 — AI-Powered Investigation, Detection Engineering, and SOC Automation
 
-5. `labs/5.0-Event-Driven-Bedrock-SOC-Automation.md`
-	- Trigger AI triage automatically from new Wazuh alert files in S3.
-	- Store structured triage artifacts for analyst review.
-	- Prepare the workflow for SIEM write-back or later automation.
+| # | Lab | Topics |
+|---|---|---|
+| 2.2 | [CloudWatch AI Operations](labs/2.2-CloudWatch-AI-Operations.md) | Logs Insights natural language queries, AI Operations configuration, AI investigation hypothesis evaluation |
+| 2.3 | [Security Monitoring Dashboard and Automated Detection](labs/2.3-Security-Monitoring-Dashboard-and-Automated-Detection.md) | Metric filters (auditd syntax), CloudWatch alarms, SOC dashboard, alarm-triggered AI investigations |
+| 2.4 | [Attack and Detect Capstone](labs/2.4-Attack-and-Detect-Capstone.md) | Independent detection pipeline build, attack simulation with `testattacker`, AI investigation evaluation, incident report |
 
-## Suggested Learning Flow
+## Reference
 
-1. Foundation: environment + Linux fundamentals.
-2. Detection basics: event generation, evidence capture, and rule-based scoring.
-3. Optional endpoint telemetry: Wazuh agent alerts + SIEM forwarding.
-4. AI augmentation: manual Bedrock triage with guardrails and validation.
-5. Automation: event-driven Bedrock triage pipeline.
+- [glossary.md](labs/glossary.md) — Key terms and AWS service definitions used throughout the course
