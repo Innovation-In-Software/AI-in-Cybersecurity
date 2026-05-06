@@ -1,4 +1,4 @@
-| Name                         | Username        | Role           | Training Code  | Access Code | Password  |
+| Name                         | Account        | Username           | Password  | Access Code | Password  |
 |------------------------------|-----------------|----------------|----------------|------------|-----------|
 | Butler, Racquel              | iis-student41   | autodev-admin  | Tr@!ninG2025   | PTACCESS671| Pa$$w0rd  |
 | Chang, Claire                | iis-student42   | autodev-admin  | Tr@!ninG2025   | PTACCESS672| Pa$$w0rd  |
