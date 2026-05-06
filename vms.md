@@ -10,7 +10,7 @@
 | N, Kasthuri                  | iis-student82   | autodev-admin  | Tr@!ninG2025   | PTACCESS678| Pa$$w0rd  |
 | Harini L                     | iis-student83   | autodev-admin  | Tr@!ninG2025   | PTACCESS679| Pa$$w0rd  |
 | Sankaran, Shan               | iis-student57   | autodev-admin  | Tr@!ninG2025   | PTACCESS680| Pa$$w0rd  |
-| Sehgal, Varun                | iis-student87   | autodev-admin  | Tr@!ninG2025   | PTACCESS681| Pa$$w0rd  |
+| Rose, Michael                | iis-student87   | autodev-admin  | Tr@!ninG2025   | PTACCESS681| Pa$$w0rd  |
 | Srivastava, Harshit          | iis-student89   | autodev-admin  | Tr@!ninG2025   | PTACCESS682| Pa$$w0rd  |
 | Adriana Koslan               | iis-student90   | autodev-admin  | Tr@!ninG2025   | PTACCESS683| Pa$$w0rd  |
 | Woodward, Joshua             | iis-student91   | autodev-admin  | Tr@!ninG2025   | PTACCESS684| Pa$$w0rd  |
