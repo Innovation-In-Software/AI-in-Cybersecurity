@@ -8,7 +8,6 @@ Hands-on two-day course for SOC analysts and detection engineers. Students build
 
 See [outline.md](outline.md) for full module descriptions, learning objectives, and course overview.
 
-AWS Login -> https://us-east-2.signin.aws.amazon.com/oauth?client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&code_challenge=mcB3lVkAzVUmHkVr5mdwnTMhwX3SQojy6FUYvLRSrYc&code_challenge_method=SHA-256&response_type=code&redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fca-oauth-flow-id%3D384f%26hashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26oauthStart%3D1777997643108%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-2_a75c779ad9374fdf
 
 ---
 
