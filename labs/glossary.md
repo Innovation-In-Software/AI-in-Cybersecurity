@@ -1,5 +1,6 @@
 # Glossary: AI in Cybersecurity
 
+
 ---
 
 ## MITRE ATT&CK Framework
