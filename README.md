@@ -1,5 +1,7 @@
 # AI in Cybersecurity
 
+[login info](https://docs.google.com/spreadsheets/d/105FLr_HRKRA0DJ8gra-bEHW5DE8KV1Gi1ycYpLCzxkc/edit?usp=sharing)
+
 Hands-on two-day course for SOC analysts and detection engineers. Students build a complete security detection and investigation pipeline on AWS — from a bare EC2 instance through live automated AI-assisted investigations.
 
 **Platform:** AWS (Amazon Linux 2023 EC2, CloudWatch, Security Hub, GuardDuty)  
